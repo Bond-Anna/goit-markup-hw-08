@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__map {
+  font-size: 14px;
+  line-height: 1.7;
+  color: $text-white;
+}
+
+.address__contacts {
+  color: $text-footer;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
