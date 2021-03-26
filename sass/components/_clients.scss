@@ -1,14 +1,17 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 94px;
+  margin-left: -30px;
 }
 
 .clients__card {
   @extend %flex;
   justify-content: center;
 
-  width: 170px;
   height: 90px;
+  margin: 0;
+  padding: 0;
 
   border-radius: 4px;
   box-sizing: border-box;
@@ -25,8 +28,21 @@
 }
 
 .clients__item {
-  & + & {
-    margin-left: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+  @media (max-width: 767px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  @media (min-width: $desktop) {
+    & + & {
+      margin-left: 30px;
+    }
+    width: 170px;
   }
 }
 
