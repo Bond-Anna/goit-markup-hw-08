@@ -1,3 +1,10 @@
+.join {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 .join__title {
   font-weight: 700;
   font-size: 14px;
@@ -6,6 +13,10 @@
   margin: 0px;
   margin-bottom: 10px;
   color: $text-white;
+
+  @media (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .join__media {

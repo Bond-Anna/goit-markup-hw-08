@@ -1,8 +1,13 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
+  padding-bottom: 30px;
   margin-left: -30px;
+
+  @media (min-width: $desktop) {
+    padding-bottom: 64px;
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__card {
