@@ -152,6 +152,7 @@
   width: 40px;
   height: 40px;
   padding: 12px 8px;
+  fill: $text-title;
   background-color: transparent;
 
   @media (min-width: $tablet) {
@@ -159,19 +160,31 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     fill: $accent-color;
   }
+  transform: fill 250ms $cubic;
 }
 
 .menu-toggle {
   position: absolute;
+  width: 40px;
+  height: 40px;
   top: 10px;
-  right: 10px;
+  right: 15px;
   display: block;
   margin: 0;
   padding: 0;
   background-color: transparent;
+  fill: $text-title;
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: $accent-color;
+  }
+  transform: fill 250ms $cubic;
 }
 
 .menu__nav {
