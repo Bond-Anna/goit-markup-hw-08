@@ -1684,12 +1684,12 @@ header {
 }
 
 .subscribe__label {
+  width: 100%;
   padding: 0;
   margin: 0;
 }
 
 .subscribe__input {
-  display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
