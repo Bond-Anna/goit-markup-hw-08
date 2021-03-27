@@ -1,11 +1,27 @@
 .btns {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  @media (min-width: $tablet) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .btns__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.btns__item {
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .btns__button {
