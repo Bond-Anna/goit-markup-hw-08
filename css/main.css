@@ -373,12 +373,7 @@ header {
 
 .nav__link--color {
   padding: 0;
-}
-
-@media (min-width: 768px) {
-  .nav__link--color {
-    color: #757575;
-  }
+  color: #757575;
 }
 
 @media (min-width: 1200px) {
@@ -463,6 +458,126 @@ header {
 }
 
 .contacts__icon:hover, .contacts__icon:focus {
+  color: #2196f3;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 48px 40px;
+  background-color: #ffffff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.header__btn {
+  width: 40px;
+  height: 40px;
+  padding: 12px 8px;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+.header__btn:hover, .header__btn:focus {
+  fill: #2196f3;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.menu__nav {
+  margin-bottom: 270px;
+}
+
+.menu__item {
+  font-size: 40px;
+  line-height: 1.175;
+  margin-bottom: 32px;
+  color: #212121;
+}
+
+.menu__item--current {
+  color: #2196f3;
+}
+
+.menu__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  font-size: 40px;
+  line-height: 1.175;
+  color: #212121;
+}
+
+.menu__item--current {
+  color: #2196f3;
+}
+
+.contacts-menu {
+  margin-bottom: 64px;
+}
+
+.contacts-menu__mail {
+  font-size: 24px;
+  line-height: 1.167;
+  color: #757575;
+}
+
+.contacts-menu__mail--link {
+  color: #757575;
+}
+
+.contacts-menu__phone {
+  font-size: 34px;
+  line-height: 1.176;
+  color: #2196f3;
+  margin-bottom: 32px;
+}
+
+.contacts-menu__phone--link {
+  color: #2196f3;
+}
+
+.menu-sm {
+  padding-right: 10px;
+}
+
+.menu-sm + .menu-sm {
+  padding-left: 10px;
+}
+
+.menu-sm--border {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-sm__link {
+  font-size: 18px;
+  line-height: 1.22;
   color: #2196f3;
 }
 

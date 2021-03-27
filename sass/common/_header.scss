@@ -49,10 +49,7 @@
 
 .nav__link--color {
   padding: 0;
-
-  @media (min-width: $tablet) {
-    color: $text-main;
-  }
+  color: $text-main;
 
   @media (min-width: $desktop) {
     padding-top: 32px;
@@ -115,4 +112,118 @@
   &:focus {
     color: $accent-color;
   }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 48px 40px;
+
+  background-color: $text-white;
+
+  transform: translateX(100%);
+  transition: transform 250ms $cubic;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.header__btn {
+  width: 40px;
+  height: 40px;
+  padding: 12px 8px;
+  background-color: transparent;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.menu__nav {
+  margin-bottom: 270px;
+}
+
+.menu__item {
+  font-size: 40px;
+  line-height: 1.175;
+  margin-bottom: 32px;
+  color: $text-title;
+
+  &--current {
+    color: $accent-color;
+  }
+}
+.menu__media {
+  display: flex;
+}
+
+.menu__item {
+  font-size: 40px;
+  line-height: 1.175;
+  color: $text-title;
+
+  &--current {
+    color: $accent-color;
+  }
+}
+
+.contacts-menu {
+  margin-bottom: 64px;
+}
+
+.contacts-menu__mail {
+  font-size: 24px;
+  line-height: 1.167;
+  color: $text-main;
+
+  &--link {
+    color: $text-main;
+  }
+}
+
+.contacts-menu__phone {
+  font-size: 34px;
+  line-height: 1.176;
+  color: $accent-color;
+  margin-bottom: 32px;
+
+  &--link {
+    color: $accent-color;
+  }
+}
+
+.menu-sm {
+  & + & {
+    padding-left: 10px;
+  }
+  padding-right: 10px;
+}
+
+.menu-sm--border {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-sm__link {
+  font-size: 18px;
+  line-height: 1.22;
+
+  color: $accent-color;
 }

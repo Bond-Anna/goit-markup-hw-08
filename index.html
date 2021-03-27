@@ -35,6 +35,10 @@
                         </svg>
                         +38 096 111 11 11</a></li>
                 </ul>
+                <button type="button" class="header__btn js-open-menu" aria-expanded="false" aria-controls="mobal-menu"><svg class="menu__icon" width="24" height="16">
+                    <use xlink:href="./images/icons.svg#menu" width="24" height="16" class="menu__svg"></use>
+                </svg></button>
+                
             </div>
         </header>
     <main>  
@@ -195,7 +199,7 @@
                     </li>
                     <li class="team-member">
                         <ul>
-                            <li class="team-member__thamb"><img srcset="../images/team/img-5.jpg 1x, ../images/team/img@2x-5.jpg 2x" class="team-member__img" src="../images/team/img-5.jpg" alt="Ольга Репина"></li>
+                            <li class="team-member__thamb"><img srcset="./images/team/img-5.jpg 1x, ./images/team/img@2x-5.jpg 2x" class="team-member__img" src="./images/team/img-5.jpg" alt="Ольга Репина"></li>
                             <li>
                                 <h3 class="team-member__name ">Ольга Репина</h3>
                             </li>
@@ -223,7 +227,7 @@
                     </li>
                     <li class="team-member">
                         <ul>
-                            <li class="team-member__thamb"><img srcset="../images/team/img-6.jpg 1x, ../images/team/img@2x-6.jpg 2x" class="team-member__img" src="../images/team/img-6.jpg" alt="Николай Тарасов"></li>
+                            <li class="team-member__thamb"><img srcset="./images/team/img-6.jpg 1x, ./images/team/img@2x-6.jpg 2x" class="team-member__img" src="./images/team/img-6.jpg" alt="Николай Тарасов"></li>
                             <li>
                                 <h3 class="team-member__name">Николай Тарасов</h3>
                             </li>
@@ -251,7 +255,7 @@
                     </li>
                     <li class="team-member">
                         <ul>
-                            <li class="team-member__thamb"><img srcset="../images/team/img-7.jpg 1x, ../images/team/img@2x-7.jpg 2x" class="team-member__img" src="../images/team/img-7.jpg" alt="Михаил Ермаков"></li>
+                            <li class="team-member__thamb"><img srcset="./images/team/img-7.jpg 1x, ./images/team/img@2x-7.jpg 2x" class="team-member__img" src="./images/team/img-7.jpg" alt="Михаил Ермаков"></li>
                             <li>
                                 <h3 class="team-member__name">Михаил Ермаков</h3>
                             </li>
@@ -367,7 +371,36 @@
             </div>
         </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobal-menu">
+        <button type="button" class="menu-toggle js-close-menu" data-modal-close><svg width="18.67"
+                height="18.67">
+                <use xlink:href="./images/icons.svg#menu-close"></use>
+            </svg></button>
+        <div class="menu">
+        <ul class="menu__nav">
+            <li class="menu__item"><a class="menu__item menu__item--current" href="index.html">Студия</a></li>
+            <li class="menu__item"><a class="menu__item" href="portfolio.html">Портфолио</a></li>
+            <li class="menu__item"><a class="menu__item" href="Контакты">Контакты</a></li>
+        </ul>
+        <ul class="contacts-menu">
+            <li class="contacts-menu__phone">
+                <a class="contacts-menu__phone contacts-menu__phone--link" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+            </li>
+            <li class="contacts-menu__mail"><a class="contacts-menu__mail contacts-menu__mail--link" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a></li>
+        </ul>
+        <ul class="menu__media">
+            <li class="menu-sm menu-sm--border"><a class="menu-sm__link" href="">Instagram</a></li>
+            <li class="menu-sm menu-sm--border"><a class="menu-sm__link" href="">Twitter</a></li>
+            <li class="menu-sm menu-sm--border"><a class="menu-sm__link" href="">Facebook</a></li>
+            <li class="menu-sm"><a class="menu-sm__link" href="">LinkedIn</a></li>
+        </ul>
+        
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

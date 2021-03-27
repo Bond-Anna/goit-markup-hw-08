@@ -1,5 +1,14 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
     <defs>
+        <symbol id="menu" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" />
+        </symbol>
+        <symbol id="menu-close" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M18.667 1.88L16.787 0 9.333 7.453 1.88 0 0 1.88l7.453 7.453L0 16.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453z" />
+        </symbol>
+
         <symbol id="close" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M15 4.108L13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108z" />
